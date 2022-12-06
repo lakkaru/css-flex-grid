@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Flex-Grid Calculators</title>
 
     <style>
       /* css for flex calculator*/
@@ -63,7 +63,7 @@
       /* css for grid calculator*/
       .container-grid {
         display: grid;
-        grid-template-columns: 60px 60px 60px;
+        grid-template-columns: 60px 60px 60px 60px;
         background-color: #9ba17b;
         grid-gap: 0px;
         font-size: 30px;
@@ -78,12 +78,13 @@
       }
       .display {
         height: 30px !important;
-        grid-column: 1 / span 3;
+        grid-column: 1 / span 4;
         text-align: right !important;
       }
 
       .display ~ div {
         background-color: #61764b;
+        
       }
       /* End css for grid calculator*/
     </style>
@@ -99,21 +100,25 @@
           <div class="button-flex"><span>1</span></div>
           <div class="button-flex"><span>2</span></div>
           <div class="button-flex"><span>3</span></div>
+          <div class="button-flex"><span>*</span></div>
         </div>
         <div class="row-flex" id="row2">
           <div class="button-flex"><span>4</span></div>
           <div class="button-flex"><span>5</span></div>
           <div class="button-flex"><span>6</span></div>
+          <div class="button-flex"><span>/</span></div>
         </div>
         <div class="row-flex" id="row3">
           <div class="button-flex"><span>7</span></div>
           <div class="button-flex"><span>8</span></div>
           <div class="button-flex"><span>9</span></div>
+          <div class="button-flex"><span>-</span></div>
         </div>
         <div class="row-flex" id="row4">
           <div class="button-flex"><span>.</span></div>
           <div class="button-flex"><span>0</span></div>
           <div class="button-flex"><span>=</span></div>
+          <div class="button-flex"><span>+</span></div>
         </div>
       </div>
       <div class="arrow-message">
@@ -129,16 +134,19 @@
           <span>999</span>
         </div>
         <div class="row-flex" id="row1">
+          <div class="button-flex" style="order: 3"><span>*</span></div>
           <div class="button-flex" style="order: 2"><span>1</span></div>
           <div class="button-flex" style="order: 1"><span>2</span></div>
           <div class="button-flex" style="order: 0"><span>3</span></div>
         </div>
         <div class="row-flex" id="row2" style="order: 2">
+          <div class="button-flex" style="order: 3"><span>/</span></div>
           <div class="button-flex" style="order: 2"><span>4</span></div>
           <div class="button-flex" style="order: 1"><span>5</span></div>
           <div class="button-flex" style="order: 0"><span>6</span></div>
         </div>
         <div class="row-flex" id="row3" style="order: 1">
+          <div class="button-flex" style="order: 3"><span>-</span></div>
           <div class="button-flex" style="order: 2"><span>7</span></div>
           <div class="button-flex" style="order: 1"><span>8</span></div>
           <div class="button-flex" style="order: 0"><span>9</span></div>
@@ -147,6 +155,7 @@
           <div class="button-flex"><span>.</span></div>
           <div class="button-flex"><span>0</span></div>
           <div class="button-flex"><span>=</span></div>
+          <div class="button-flex"><span>+</span></div>
         </div>
       </div>
     </div>
@@ -157,18 +166,22 @@
       <div class="button"><span>1</span></div>
       <div class="button"><span>2</span></div>
       <div class="button"><span>3</span></div>
+      <div class="button"><span>*</span></div>
 
       <div class="button"><span>4</span></div>
       <div class="button"><span>5</span></div>
       <div class="button"><span>6</span></div>
+      <div class="button"><span>/</span></div>
 
       <div class="button"><span>7</span></div>
       <div class="button"><span>8</span></div>
       <div class="button"><span>9</span></div>
+      <div class="button"><span>-</span></div>
 
       <div class="button"><span>.</span></div>
       <div class="button"><span>0</span></div>
       <div class="button"><span>=</span></div>
+      <div class="button"><span>+</span></div>
     </div>
     <div style="display: flex; justify-content: center">
       <strong>Cal with Css grid</strong>
